@@ -1,13 +1,18 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-// Function declaration
-int  printName(){
-    cout << "Aashutosh" ;
-    return 32;
-}
+//min of 2 
+/*
+//min of 2 
+
+int printMin(int a , int b) {
+        return min(a,b);
+    }
+
 
 int main () {
-int val = printName();
-cout << endl <<"val = " << val << endl;
+    cout << printMin(20,26) << endl;
+    cout << printMin(24,12);
 }
+*/

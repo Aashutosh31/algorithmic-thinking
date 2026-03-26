@@ -19,6 +19,18 @@ void printPrime(int n) {
     }
 }
 
+int printsum(int n) {
+    int total = 0;
+
+    for(int i = 1; i <= n; i++){
+        if(primeCheck(i)){
+            total += i;
+        }
+    }
+    return total;
+}
+
 int main () {
     printPrime(5);
+    cout << printsum(5);
 }

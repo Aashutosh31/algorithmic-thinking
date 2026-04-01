@@ -22,7 +22,9 @@ This repository contains my Data Structures and Algorithms practice using C++.
 - C++
 
 ## 📈 Progress
-- Day 1: Basics
+- Day 1: Basicsa
+- Day 2: Arrays
+- Day 3: Vectors
   
 - ...
 

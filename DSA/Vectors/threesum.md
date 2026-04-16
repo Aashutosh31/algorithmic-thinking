@@ -1,4 +1,3 @@
-
 # 🧠 DSA Log — 3Sum
 
 ## 📅 Date
@@ -48,17 +47,27 @@ nums[j] + nums[k] = -nums[i]
 sort(nums.begin(), nums.end())
 ```
 
+* Sorting is REQUIRED to:
+
+  * apply two-pointer technique
+  * decide pointer movement (increase/decrease sum)
+  * handle duplicates easily
+
+---
+
 2. Loop through array:
 
 ```
 for i = 0 → n-2
 ```
 
-3. Skip duplicates for `i`:
+3. Skip duplicates for `i` (before processing):
 
 ```
-if(i > 0 && nums[i] == nums[i-1]) continue;
+if(i > 0 && nums[i] == nums[i - 1]) continue;
 ```
+
+---
 
 4. Use two pointers:
 
@@ -67,7 +76,15 @@ j = i + 1
 k = n - 1
 ```
 
-5. While `j < k`:
+5. Condition:
+
+```
+while(j < k)  // compare indices, NOT values
+```
+
+---
+
+6. Inside loop:
 
 * If sum < 0 → move `j++`
 * If sum > 0 → move `k--`
@@ -76,6 +93,34 @@ k = n - 1
   * store triplet
   * move both pointers
   * skip duplicates for `j` and `k`
+
+---
+
+## 🔁 Duplicate Handling
+
+### For `i`:
+
+* Skip BEFORE processing
+* Avoid starting from same value again
+
+```
+if(i > 0 && nums[i] == nums[i - 1]) continue;
+```
+
+---
+
+### For `j` and `k`:
+
+* Skip ONLY AFTER finding a valid triplet
+* Prevent duplicate triplets
+
+```
+j++;
+k--;
+
+while(j < k && nums[j] == nums[j - 1]) j++;
+while(j < k && nums[k] == nums[k + 1]) k--;
+```
 
 ---
 
@@ -147,11 +192,27 @@ Output:
 
 ---
 
+## ⚠️ Common Misconceptions
+
+* `j < k` is based on indices, NOT values
+
+* `nums[j] == nums[k]` does NOT stop the loop
+
+* Duplicate skipping:
+
+  * does NOT skip valid answers
+  * only skips already-used values after a valid triplet
+
+* Algorithm works without duplicate skipping,
+  but produces duplicate results ❌
+
+---
+
 ## 🐞 Mistakes I Made
 
 ### 1. Used `while` instead of `if` for duplicate `i` ❌
 
-```cpp
+```
 while(i > 0 && nums[i] == nums[i - 1]) ❌
 ```
 
@@ -162,7 +223,7 @@ while(i > 0 && nums[i] == nums[i - 1]) ❌
 ### 2. Didn’t understand duplicate skipping ❌
 
 👉 Thought loops were skipping iterations
-👉 Actually they move pointers forward/backward
+👉 Actually they skip repeated results
 
 ---
 
@@ -175,7 +236,7 @@ while(i > 0 && nums[i] == nums[i - 1]) ❌
 
 ### 4. Printing vector<vector<int>> ❌
 
-```cpp
+```
 cout << result[i]; ❌
 ```
 
@@ -185,7 +246,7 @@ cout << result[i]; ❌
 
 ### 5. No spacing in output ❌
 
-```cpp
+```
 -312 ❌
 ```
 
@@ -193,20 +254,22 @@ cout << result[i]; ❌
 
 ---
 
+### 6. Thought duplicate skipping skips valid cases ❌
+
+👉 Actually skips only repeated results, not possibilities
+
+---
+
 ## 💡 Key Learnings
 
 * 3Sum = **Two Sum + one loop**
-* Sorting helps:
-
-  * use two pointers
-  * detect duplicates easily
+* Sorting enables two-pointer logic
 * Duplicate handling is critical:
 
   * `i` → avoid repeated starts
   * `j`, `k` → avoid repeated triplets
-* `while` loops ≠ skipping iterations
-
-  * they move pointers multiple times
+* Skip duplicates only after using them once successfully
+* Loop runs on indices, not values
 
 ---
 
@@ -237,11 +300,12 @@ Used in:
 * Breakthrough:
 
   * understanding 3Sum = Two Sum + fixed element
-* Printing issue made output look wrong
-* Concept became clear after debugging step-by-step
+* Learned difference between:
+
+  * skipping values vs skipping results
 
 ---
 
 ## 🏁 Final Takeaway
 
-> Fix one → solve Two Sum → skip duplicates everywhere.
+> Fix one → solve Two Sum → skip duplicates ONLY after using them.

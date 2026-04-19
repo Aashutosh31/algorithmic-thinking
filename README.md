@@ -15,8 +15,6 @@ This repository contains my Data Structures and Algorithms practice using C++.
 - Searching
 - (More coming...)
 
-## 📂 Structure
-- cpp-basics
 
 ## ⚙️ Language
 - C++

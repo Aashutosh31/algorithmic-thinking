@@ -1,31 +1,87 @@
-# 🚀 DSA Practice (C++)
+# 🚀 Algorithmic Thinking & DSA (C++)
 
-This repository contains my Data Structures and Algorithms practice using C++.
-
-## 📌 Goals
-- Strengthen problem-solving skills
-- Prepare for product-based companies
-- Build strong algorithmic thinking
-
-## 🧠 Topics Covered
-- Arrays
-- Strings
-- Recursion
-- Sorting
-- Searching
-- (More coming...)
-
-
-## ⚙️ Language
-- C++
-
-## 📈 Progress
-- Day 1: Basics
-- Day 2: Arrays
-- Day 3: Vectors
-  
-- ...
+This repository documents my journey of mastering **Data Structures and Algorithms using C++**, with a focus on building strong problem-solving skills and clean coding practices.
 
 ---
 
-💡 This repo is part of my journey toward becoming a software engineer & building real-world projects.
+## 🎯 Objectives
+
+* Improve problem-solving ability
+* Master core DSA concepts
+* Prepare for coding interviews (product-based companies)
+* Build strong algorithmic intuition
+
+---
+
+## 📂 Repository Structure
+
+```
+DSA/
+ ├── Arrays - Vectors/
+ │    ├── removeDuplicates
+ │    ├── removeElement
+ │
+ ├── Two-Pointers/
+ │    ├── Valid Palindrome
+ │    ├── Two Sum
+ │    ├── Container With Most Water
+ │    ├── 3Sum
+ │
+cpp-basics/
+ ├── basics/
+ │    ├── binaryToBase
+ │    ├── functions
+ │    ├── prime
+```
+
+Each problem typically includes:
+
+* ✅ C++ solution (`.cpp`)
+* 📝 Explanation (`.md`)
+* 📌 Problem reference
+
+---
+
+## 🧠 Topics Covered
+
+* Arrays & Vectors
+* Two Pointers
+* Basic C++ Concepts
+* (More coming...)
+
+---
+
+## 📈 Progress Tracker
+
+| Topics Covered  |
+| -------------   |
+|  C++ Basics     |
+|  Arrays         |
+|  Vectors        |
+|  Two Pointers   |
+
+---
+
+## 💡 Learning Approach
+
+* Solve problems from platforms like LeetCode
+* Focus on understanding patterns (not just solutions)
+* Maintain clean and structured code
+* Document learnings for revision
+
+---
+
+## 🛠 Tech Stack
+
+* Language: **C++**
+* IDE: VS Code
+
+---
+
+## 🚀 Ongoing...
+
+This is a continuously growing repository as I progress deeper into DSA.
+
+---
+
+⭐ If you're also learning DSA, feel free to explore and learn along!

@@ -1,23 +1,3 @@
-Stop right there. Never feel bad about looking up a standard library function. 
-
-You correctly identified the **logical requirement** (we need to skip characters that don't matter). You just didn't know the specific C++ **syntax** to do it (`isalnum`). 
-
-An engineer doesn't memorize the dictionary; an engineer figures out what tool is missing and then goes to the documentation to find it. Searching the internet for "how to check if char is alphanumeric in C++" is exactly the right move.
-
-Let's look at the code you integrated:
-```cpp
-while(left < right && !isalnum(s[left])) left++;
-```
-You should understand *why* this is written as a `while` loop and not an `if` statement. If you have multiple spaces in a row (e.g., `"a    b"`), an `if` statement only skips one space. The `while` loop acts as a "fast-forward" button, skipping everything until it hits a valid letter. 
-
-Also, notice the `left < right` condition inside that inner `while` loop. That is a critical safety check. If the string is entirely punctuation (e.g., `"., ,."`), the pointer would just keep incrementing until it crashed out of bounds. That `left < right` boundary check prevents a segmentation fault.
-
-You successfully implemented a **Two-Pointer with Conditional Fast-Forward**. 
-
-Here is the documentation for your repository.
-
-***
-
 # 🧠 DSA Log — Valid Palindrome (LeetCode 125)
 
 ## 📅 Date

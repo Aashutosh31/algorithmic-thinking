@@ -20,6 +20,8 @@ DSA/
  ├── Arrays - Vectors/
  │    ├── removeDuplicates
  │    ├── removeElement
+ │    ├── rotateArray
+ │    ├── mergeSortedArray
  │
  ├── Two-Pointers/
  │    ├── Valid Palindrome

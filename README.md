@@ -22,6 +22,9 @@ DSA/
  │    ├── removeElement
  │    ├── rotateArray
  │    ├── mergeSortedArray
+ │    ├── majorityElement
+ │    ├── Best-Time-To-Buy-And-Sell-Stock
+ │    ├── Best-Time-To-Buy-And-Sell-Stock II
  │
  ├── Two-Pointers/
  │    ├── Valid Palindrome

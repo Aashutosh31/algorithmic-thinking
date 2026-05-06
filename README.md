@@ -25,6 +25,9 @@ DSA/
  │    ├── majorityElement
  │    ├── Best-Time-To-Buy-And-Sell-Stock
  │    ├── Best-Time-To-Buy-And-Sell-Stock II
+ │    ├── Jump-Game
+ │    ├── Jump-Game II
+ │    ├── H-Index
  │
  ├── Two-Pointers/
  │    ├── Valid Palindrome

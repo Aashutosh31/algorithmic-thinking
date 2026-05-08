@@ -28,7 +28,7 @@ DSA/
  │    ├── Jump-Game
  │    ├── Jump-Game II
  │    ├── H-Index
- │    ├── Index-Of-First-Occurrence
+
  │
  ├── Two-Pointers/
  │    ├── Valid Palindrome
@@ -36,6 +36,7 @@ DSA/
  │    ├── Container With Most Water
  │    ├── 3Sum
  │    ├── Is Subsequence
+ │    ├── Index-Of-First-Occurrence
  |
 cpp-basics/
  ├── basics/

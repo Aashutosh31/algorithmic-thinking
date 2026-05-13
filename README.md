@@ -28,6 +28,7 @@ DSA/
  │    ├── Jump-Game
  │    ├── Jump-Game II
  │    ├── H-Index
+ │    ├── Longest-Common-Prefix
 
  │
  ├── Two-Pointers/
